@@ -8,3 +8,29 @@ body {
     height: 500px;
     background: aqua;
 }
+.new-task__colors {
+
+}
+.colors__item {
+    height: 25px;
+    width: 25px;
+}
+
+#colors__item_red {
+    background-color: red;
+}
+#colors__item_pink {
+    background-color: pink;
+}
+#colors__item_purple {
+    background-color: mediumpurple;
+}
+#colors__item_navy {
+    background-color: navy;
+}
+#colors__item_blue {
+    background-color: deepskyblue;
+}
+#colors__item_yellow {
+    background-color: yellow;
+}
