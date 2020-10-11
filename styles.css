@@ -1,13 +1,19 @@
+html {
+    font-size: 18px;
+    background-color: rgb(235, 243, 246);
+}
+
 body {
     display: flex;
     width: 100%;
-    justify-content: center ;
+    justify-content: center;
 }
+
 .wrapper {
     width: 800px;
     height: 500px;
-    background: aqua;
 }
+
 
 .new-task {
     display: flex;
@@ -15,51 +21,55 @@ body {
     height: 49px;
     background-color: white;
     align-items: center;
+    justify-content: space-around;
     outline: 1px solid gainsboro;
 }
 
 .new-task__input {
-    width: 50%;
+    width: 70%;
     height: 30px;
     border-radius: 0;
     padding: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    outline:none;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: none;
     border: none;
+    font-size: 1rem;
 }
 
 .new-task__options {
-    width: 35%;
+    width: 15%;
 }
 
-.new-task__colors {
+.colors {
     display: flex;
     justify-content: space-around;
-}
-
-.to-do-list__item {
-    display: flex;
-}
-
-.to-do-list li {
-    list-style: none;
+    width: 100%;
 }
 
 .colors__item {
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+}
+
+.new-task__controls {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .new-task__btn {
-    background-color: cadetblue;
+    background-color: rgb(38, 165, 154);
     color: white;
     font-size: 12pt;
     outline: none;
     border: none;
-    width: 15%;
-    height: 30px;
-    padding: 0;
+    width: 60%;
+    height: 70%;
+    border-radius: 3px;
 }
 
 .new-task__btn :hover {
@@ -67,46 +77,77 @@ body {
     outline: 2px solid white;
 }
 
-.task__manage {
-    width: 60px;
+
+.to-do-list {
+    width: 100%;
+    padding: 0;
+}
+
+.to-do-list li {
+    list-style: none;
+    outline: 1px solid white;
+
+}
+
+.to-do-list__item {
+    display: flex;
     height: 60px;
-    background-color: yellow;
+}
+
+
+.task__manage {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    border-right: 2px solid white;
+    width: 60px;
 }
+
 
 .task__body {
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
 }
 
-.chosen {
-    width: 23px;
-    height: 23px;
-    outline: 1px solid darkgrey; /* Чёрная рамка */
+.task__text {
+    display: block;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    overflow: hidden;
+    width: 95%;
+}
+
+.colors__item_chosen {
+    width: 13px;
+    height: 13px;
+    outline: 1px solid darkgrey;
+    /* Чёрная рамка */
     border: 1px solid white;
 }
 
-.red {
-    background-color: red;
+.colors__item_red {
+    background-color: rgb(238, 106, 104);
 }
 
-.pink {
-    background-color: pink;
+.colors__item_pink {
+    background-color: rgb(243, 121, 162);
 }
 
-.mediumpurple {
-    background-color: mediumpurple;
+.colors__item_purple {
+    background-color: rgb(145, 112, 203);
 }
 
-.navy {
-    background-color: navy;
+.colors__item_navy {
+    background-color: rgb(94, 179, 246);
 }
 
-.deepskyblue {
-    background-color: deepskyblue;
+.colors__item_blue {
+    background-color: rgb(103, 215, 229);
 }
 
-.yellow {
-    background-color: yellow;
+.colors__item_yellow {
+    background-color: rgb(255, 224, 131);
 }

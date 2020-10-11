@@ -10,34 +10,24 @@
 <body>
     <div class="wrapper">
         <div class="to-do-app">
-            <header class="header">Header</header>
             <ul class="to-do-list" id="to-do-list">
-                <li>
-                    <digiv class = "to-do-list__item">
-                        <div class = "task__manage" >
-                            <input class = "task__checkbox" type = "checkbox">
-                        </div>
-                        <div class = "task__body">
-                            ПРОХОДИ НЕ ЗАДЕРЖИВАЙСЯ
-                        </div>
-                    </digiv>
-                </li>
             </ul>
             <div class="new-task">
-                <input placeholder="Add new item" class="new-task__input" id="new-task__input">
+                <input placeholder="Add new item" class="new-task__input" maxlength="85" id="new-task__input">
                 <div class="new-task__options">
-                    <div class="new-task__colors">
-                        <div class="colors__item red"></div>
-                        <div class="colors__item pink"></div>
-                        <div class="colors__item mediumpurple"></div>
-                        <div class="colors__item navy"></div>
-                        <div class="colors__item deepskyblue"></div>
-                        <div class="colors__item yellow"></div>
+                    <div class="colors">
+                        <div class="colors__item colors__item_red"></div>
+                        <div class="colors__item colors__item_pink"></div>
+                        <div class="colors__item colors__item_purple"></div>
+                        <div class="colors__item colors__item_navy"></div>
+                        <div class="colors__item colors__item_blue"></div>
+                        <div class="colors__item colors__item_yellow"></div>
                     </div>
                 </div>
-                <button class="new-task__btn" id="new-task__btn">Add</button>
+                <div class="new-task__controls">
+                    <button class="new-task__btn" id="new-task__btn">Add</button>
+                </div>
             </div>
-            <footer class="footer">Footer</footer>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
