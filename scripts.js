@@ -1,4 +1,4 @@
-$(".new-task__btn").on('click', function (e) {
+function addNewTask() {
     let taskTxt = String($('.new-task__input').val());
 
     if (taskTxt.trim().length === 0) {
@@ -13,8 +13,20 @@ $(".new-task__btn").on('click', function (e) {
         '</div>' + '<div class = "task__body">' + '<p class = "task__text">' + taskTxt + '</p>' + '</div>' + '</div>' + '</li>');
 
     $("#to-do-list").append(taskBody);
+}
 
+
+$(".new-task__btn").on('click', function (e) {
+    addNewTask();
 });
+
+$(".new-task__input").on('keypress', function (e) {
+    if (e.keyCode === 13) {
+        addNewTask();
+    }
+});
+
+
 
 $(".colors__item").on('click', function (e) {
     let checked = $(".to-do-list :checked");
