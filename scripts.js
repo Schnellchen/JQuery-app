@@ -6,6 +6,8 @@ function addNewTask() {
         return
     }
 
+    taskTxt = taskTxt.replace(/script/gi, "").replace(/<>/gi, "");
+
     let bgColors = ["colors__item_red", "colors__item_pink", "colors__item_purple", "colors__item_navy", "colors__item_blue", "colors__item_yellow"];
     let bgColor = bgColors[Math.round(Math.random() * 5)];
     let taskBody = ('<li>' + '<div class = "to-do-list__item' + ' ' + bgColor + ' ' + 'task">' +
@@ -15,17 +17,15 @@ function addNewTask() {
     $("#to-do-list").append(taskBody);
 }
 
-
 $(".new-task__btn").on('click', function (e) {
     addNewTask();
 });
 
 $(".new-task__input").on('keypress', function (e) {
-    if (e.keyCode === 13) {
+    if (e.code === "Enter") {
         addNewTask();
     }
 });
-
 
 
 $(".colors__item").on('click', function (e) {
